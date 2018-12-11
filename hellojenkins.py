@@ -7,7 +7,7 @@ class TestStringMethods(unittest.TestCase):
 	def test_isupper(self):
 		self.assertTrue('FOO'.isupper())
 		self.assertFalse('Foo'.isupper())
-		
+
 	def test_split(self):
 		s = 'hello world'
 		self.assertEqual(s.split(), ['hello', 'world'])
@@ -16,7 +16,7 @@ class TestStringMethods(unittest.TestCase):
 			s.split(2)
 
 	def test_fail(self):
-		self.assertTrue(False)
+		self.assertFalse(False)
 
 if __name__ == '__main__':
 	unittest.main()
